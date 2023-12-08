@@ -1,0 +1,392 @@
+html, body{
+	font-family: fantasy !important;
+	background-color: #101217 !important;
+	letter-spacing: 1px;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #101217;
+}
+
+::-webkit-scrollbar
+{
+  height: 5px;
+  width: 5px;
+  background-color: #101217;
+}
+
+::-webkit-scrollbar-thumb
+{ 
+  background-color:  #101217;
+  background-image: -webkit-linear-gradient(top,#101217 0%,#b8ae93 30%, white 50% ,#b8ae93 70%, #101217 100%);
+}
+
+/* ===================================header====================================== */
+#header .navbar{
+	display: flex;
+}
+#header .nav-item{
+	padding: 5px 10px;
+}
+#header .nav-item a{
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
+}
+#header .nav-item a:hover{
+	color: #997b41;
+	text-decoration: none;
+}
+.nav-right{
+	justify-content: right !important;
+}
+.form-search{
+	position: relative;
+}
+.form-search input{
+	background: none;
+	border: 0;
+	border-bottom: 2px solid white;
+	padding-left: 29px;
+	font-size: 17px;
+	width: 100%;
+}
+.form-search i{
+    font-size: 18px;
+    top: 5px;
+    color: white;
+    position: absolute;
+}
+.noti i{
+	font-size: 25px;
+	color: white;
+	margin: 5px 10px;
+}
+.user i{
+	font-size: 21px;
+	color: white;
+	margin: 0 10px;
+	padding: 6px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+/* ====================================body===================================== */
+#main{
+	display: flex;
+}
+.carousel-inner{
+	border-radius: 29px;
+}
+.carousel-inner .item img{
+	width: 100%;
+	max-height: 552px !important;
+}
+.carousel-caption p{
+	font-size: 88px;
+}
+.carousel-caption .d-flex{
+	margin-top: 29px;
+}
+.carousel-caption button{
+	font-size: 20px;
+	padding: 3px 15px;
+	margin: 0 13px;
+}
+.joker{
+	top: 50px !important;
+	margin-left: -90px;
+}
+.godfather .d-flex{
+	float: right;
+}
+.harry{
+	top: 166px !important;
+	margin-left: -129px;
+}
+.glyphicon-fire{
+	color: orange;
+}
+
+/* ====================================movie-list===================================== */
+.movie-list{
+	margin-top: 50px;
+}
+.movie-list h2{
+	color: white;
+}
+.movie-info img{
+	width: 100%;
+	height: 310px
+}
+.movie-name{
+	color: white;
+	position: absolute;
+	top: 15px;
+  	margin-left: -40px;
+  	opacity: 0;
+  	transition: all 0.35s ease-in-out;
+  	transform: translateX(0);
+}
+.movie-info:hover .movie-name{
+  	transform: translateX(50px);
+  	visibility: visible;
+  	opacity: 1;
+}
+.movie-info:hover img{
+	opacity: 0.5;
+}
+.movie-feature{
+	font-size: 20px;
+  	margin-top: -49px;
+    height: 39px;
+  	opacity: 0;
+  	transition: all 0.35s ease-in-out;
+  	top: auto;
+  	transform: translateY(100%);
+}
+.movie-feature button a{
+	color: black;
+}
+.movie-feature button a:hover{
+	color: black;
+	text-decoration: none;
+}
+.movie-info:hover .movie-feature{
+  	transform: translateY(0);
+  	visibility: visible;
+  	opacity: 1;
+}
+.movie-feature button{
+	margin: 0 5px;
+	font-size: 13px;
+}
+.fa-heart{
+	padding: 0 3px;
+	color: white;
+}
+.tv-series{
+	margin-top: 50px;
+}
+.tv-series h2{
+	color: white;
+}
+.korean-tv-series{
+	margin-top: 50px;
+}
+.korean-tv-series h2{
+	color: white;
+}
+
+/* ====================================movie-coming===================================== */
+.movie-coming-soon{
+	margin: 7px 0;
+	color: white;
+}
+.movie-coming-soon a{
+	color: #bfa511;
+	text-decoration: none;
+}
+.movie-coming-soon a:hover{
+	color: #997b41;
+	text-decoration: none;
+}
+.ads{
+	margin: 15px 0;
+}
+.ads img{
+	width: 100%;
+	border-radius: 29px;
+}
+.movie-coming-soon .movie-info{
+	position: relative;
+	margin: 9px 0;	
+}
+.movie-coming-soon .movie-info img{
+	width: 100%;
+	height: 100px;
+	border-radius: 15px;
+	opacity: 0.5;
+}
+.movie-coming-soon .movie-info .content-info{
+	position: absolute;
+	padding: 9px 9px;
+	top: 0;
+}
+.your-movie-list{
+	margin: 7px 0;
+	color: white;
+}
+.your-movie-list a{
+	color: #bfa511;
+	text-decoration: none;
+}
+.your-movie-list a:hover{
+	color: #997b41;
+	text-decoration: none;
+}
+.your-movie-list .movie-info{
+	position: relative;
+	margin: 9px 0;	
+}
+.your-movie-list .movie-info img{
+	width: 100%;
+	height: 100px;
+	border-radius: 15px;
+	opacity: 0.5;
+}
+.your-movie-list .movie-info .content-info{
+	position: absolute;
+	padding: 9px 9px;
+	top: 0;
+}
+.movie-info{
+	transition: transform 555ms;
+    transform: scale(1, 1);
+}
+.movie-info:hover{
+	transition: transform 555ms;
+    transform: scale(1.1, 1.1);
+}
+
+/* =====================================footer===================================== */
+#footer{
+	margin-top: 77px;
+	padding-top: 50px;
+	font-size: 16px;
+	background-color: black;
+}
+#footer a{
+	text-decoration: none;
+	color: white;
+}
+#footer a:hover{
+	text-decoration: none;
+	color: #997b41;
+}
+#footer ul li{
+	display: block;
+}
+#footer hr{
+	border-bottom: 2px solid #997b41;
+	width: 150%
+}
+.footer-bottom{
+	width: 100%;
+	color: white;
+}
+
+/* =====================================movie-detail===================================== */
+
+.movie-main-content{
+	width: 100%;
+	height: 500px;
+	margin: 20px 0;
+	background: url('../img/alien.jpg') no-repeat;
+	background-size: 100%;
+	backdrop-filter: blur(5px);
+	color: white;
+}
+.movie-main-content h1{
+	font-size: 40px;
+}
+.movie-main-content .col-7{
+	margin-top: 70px;
+}
+.movie-main-content .col-7 h1{
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.movie-main-content .rate i{
+	font-size: 18px;
+	color: #997b41;
+}
+.movie-main-content .col-7 p{
+	font-size: 17px;
+}
+.movie-main-content .col-7 span{
+	color: #997b41;
+}
+.movie-main-content .col-7 ul{
+	padding-left: 0;
+}
+.movie-main-content .col-7 ul li{
+	display: block;
+	font-size: 17px;
+}
+.movie-main-content .col-7 button{
+	font-size: 22px;
+}
+.movie-main-content .col-5{
+	margin-top: 200px;
+}
+.movie-main-content .col-5 a{
+	color: white;
+}
+.movie-main-content .col-5 a:hover{
+	color: #997b41;
+	text-decoration: none;
+}
+.movie-main-content .col-5 h1{
+	text-transform: uppercase;
+}
+.movie-main-content .col-5 i{
+	font-size: 80px;
+}
+.movie-relate{
+	margin-top: 29px;
+}
+
+/* =====================================movie-detail===================================== */
+
+.main-watch-detail{
+	color: white;
+	font-size: 17px;
+	margin: 20px 0;
+}
+.main-watch-detail iframe{
+	width: 1129px;
+	height: 480px;
+}
+.main-watch-detail hr{
+	border-bottom: 1px solid grey;
+	margin: 5px 0;
+}
+.feature{
+	margin: 15px 0;
+}
+.feature button{
+	font-size: 15px;
+}
+.server h4{
+	padding-top: 7px;
+}
+.server{
+	margin: 10px 0;
+}
+.server button{
+	margin: 0 5px;
+	font-size: 17px;
+}
+.episode{
+	margin: 10px 0;
+}
+.episode h4{
+	padding-top: 5px;
+}
+.episode button{
+	padding: 0 10px;
+	margin: 0 5px;
+	font-size: 17px;
+}
+.desc .rate, .desc .time{
+	margin: 10px 0;
+}
+.desc .rate i{
+	color: #997b41;
+}
+.desc-content h2{
+	color: #997b41;
+}
